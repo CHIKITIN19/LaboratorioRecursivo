@@ -8,9 +8,17 @@ package AjedrezRecursivo;
  *
  * @author sebas
  */
-public interface Pieza {
+public abstract class Pieza {
     
-    int coordenadaX= 0;
-    int coordenadaY= 0;
+    protected int coordenadaX= 0;
+    protected int coordenadaY= 0;
+
+    public Pieza(int coordenadaX,int coordenadaY) {
+    this.coordenadaX = coordenadaX;
+    this.coordenadaY = coordenadaY;
+    
+    }
+    
+    
     
 }
