@@ -4,17 +4,20 @@
  */
 package laboratoriorecursivo;
 
-/**
- *
- * @author 9567
- */
+import Queen.EightQueens;
+
 public class LaboratorioRecursivo {
 
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        EightQueens eightQueens = new EightQueens();
+        if (eightQueens.solve(0)) {
+            eightQueens.printBoard();
+        } else {
+            System.out.println("No se han encontrado soluciones.");
+        }
     }
     
 }
