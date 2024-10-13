@@ -10,7 +10,7 @@ package AjedrezRecursivo;
  */
 public class Tablero {
     private int [][] tablero;
-    private static final int tamano = 0;
+    private static final int tamano = 8;
     
     public Tablero(){
         tablero = new int [tamano][tamano];
