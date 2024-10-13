@@ -94,4 +94,5 @@ public class Horse extends Pieza {
             e.printStackTrace();
         }
     }
+    
 }
