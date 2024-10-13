@@ -6,10 +6,10 @@ package Queen;
 
 public class EightQueens {
     private final int BOARD_SIZE = 8;
-    private final char QUEEN = 'Q';
+    final char QUEEN = 'Q';
     private final char EMPTY = '.';
     
-    private final char[][] board = new char[BOARD_SIZE][BOARD_SIZE];
+    final char[][] board = new char[BOARD_SIZE][BOARD_SIZE];
 
     public EightQueens() {
         for (int i = 0; i < BOARD_SIZE; i++) {
