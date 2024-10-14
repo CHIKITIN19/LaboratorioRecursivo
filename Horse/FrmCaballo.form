@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="876" max="32767" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="Panel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="207" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="218" max="-2" attributes="0"/>
+              <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="469" max="32767" attributes="0"/>
+          </Group>
+          <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="Panel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+              </Group>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="Panel">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="A8" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B8" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="C8" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="D8" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="E8" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="F8" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="G8" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="H8" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="A7" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B7" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="C7" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="D7" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="E7" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="F7" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="G7" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="H7" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="A6" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B6" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="C6" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="D6" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="E6" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="F6" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="G6" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="H6" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="A5" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B5" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="C5" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="D5" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="E5" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="F5" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="G5" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="H5" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="A4" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B4" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="C4" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="D4" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="E4" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="F4" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="G4" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="H4" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="A3" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B3" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="C3" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="D3" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="E3" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="F3" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="G3" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="H3" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="A2" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B2" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="C2" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="D2" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="E2" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="F2" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="G2" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="H2" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <Component id="A1" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="B1" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="C1" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="D1" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="E1" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="F1" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="G1" min="-2" pref="100" max="-2" attributes="0"/>
+                          <EmptySpace max="-2" attributes="0"/>
+                          <Component id="H1" min="-2" pref="100" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="A8" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="B8" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="C8" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="D8" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="E8" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="F8" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="G8" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="H8" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="A7" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="B7" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="C7" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="D7" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="E7" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="F7" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="G7" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="H7" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="A6" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="B6" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="C6" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="D6" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="E6" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="F6" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="G6" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="H6" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="A5" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="B5" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="C5" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="D5" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="E5" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="F5" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="G5" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="H5" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="A4" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="B4" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="C4" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="D4" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="E4" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="F4" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="G4" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="H4" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="A3" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="B3" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="C3" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="D3" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="E3" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="F3" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="G3" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="H3" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="A2" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="B2" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="C2" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="D2" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="E2" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="F2" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="G2" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="H2" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="A1" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="B1" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="C1" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="D1" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="E1" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="F1" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="G1" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                      <Component id="H1" alignment="3" min="-2" pref="100" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JButton" name="A8">
+        </Component>
+        <Component class="javax.swing.JButton" name="B8">
+        </Component>
+        <Component class="javax.swing.JButton" name="C8">
+        </Component>
+        <Component class="javax.swing.JButton" name="D8">
+        </Component>
+        <Component class="javax.swing.JButton" name="E8">
+        </Component>
+        <Component class="javax.swing.JButton" name="F8">
+        </Component>
+        <Component class="javax.swing.JButton" name="G8">
+        </Component>
+        <Component class="javax.swing.JButton" name="H8">
+        </Component>
+        <Component class="javax.swing.JButton" name="A7">
+        </Component>
+        <Component class="javax.swing.JButton" name="B7">
+        </Component>
+        <Component class="javax.swing.JButton" name="C7">
+        </Component>
+        <Component class="javax.swing.JButton" name="D7">
+        </Component>
+        <Component class="javax.swing.JButton" name="E7">
+        </Component>
+        <Component class="javax.swing.JButton" name="G7">
+        </Component>
+        <Component class="javax.swing.JButton" name="H7">
+        </Component>
+        <Component class="javax.swing.JButton" name="F7">
+        </Component>
+        <Component class="javax.swing.JButton" name="D6">
+        </Component>
+        <Component class="javax.swing.JButton" name="A6">
+        </Component>
+        <Component class="javax.swing.JButton" name="C6">
+        </Component>
+        <Component class="javax.swing.JButton" name="B6">
+        </Component>
+        <Component class="javax.swing.JButton" name="E6">
+        </Component>
+        <Component class="javax.swing.JButton" name="G6">
+        </Component>
+        <Component class="javax.swing.JButton" name="H6">
+        </Component>
+        <Component class="javax.swing.JButton" name="F6">
+        </Component>
+        <Component class="javax.swing.JButton" name="E5">
+        </Component>
+        <Component class="javax.swing.JButton" name="D5">
+        </Component>
+        <Component class="javax.swing.JButton" name="G5">
+        </Component>
+        <Component class="javax.swing.JButton" name="A5">
+        </Component>
+        <Component class="javax.swing.JButton" name="H5">
+        </Component>
+        <Component class="javax.swing.JButton" name="B5">
+        </Component>
+        <Component class="javax.swing.JButton" name="F5">
+        </Component>
+        <Component class="javax.swing.JButton" name="C5">
+        </Component>
+        <Component class="javax.swing.JButton" name="A4">
+        </Component>
+        <Component class="javax.swing.JButton" name="C4">
+        </Component>
+        <Component class="javax.swing.JButton" name="G4">
+        </Component>
+        <Component class="javax.swing.JButton" name="F4">
+        </Component>
+        <Component class="javax.swing.JButton" name="E4">
+        </Component>
+        <Component class="javax.swing.JButton" name="H4">
+        </Component>
+        <Component class="javax.swing.JButton" name="B4">
+        </Component>
+        <Component class="javax.swing.JButton" name="D4">
+        </Component>
+        <Component class="javax.swing.JButton" name="A3">
+        </Component>
+        <Component class="javax.swing.JButton" name="F3">
+        </Component>
+        <Component class="javax.swing.JButton" name="D3">
+        </Component>
+        <Component class="javax.swing.JButton" name="G3">
+        </Component>
+        <Component class="javax.swing.JButton" name="H3">
+        </Component>
+        <Component class="javax.swing.JButton" name="E3">
+        </Component>
+        <Component class="javax.swing.JButton" name="B3">
+        </Component>
+        <Component class="javax.swing.JButton" name="C3">
+        </Component>
+        <Component class="javax.swing.JButton" name="A2">
+        </Component>
+        <Component class="javax.swing.JButton" name="B2">
+        </Component>
+        <Component class="javax.swing.JButton" name="C2">
+        </Component>
+        <Component class="javax.swing.JButton" name="D2">
+        </Component>
+        <Component class="javax.swing.JButton" name="E2">
+        </Component>
+        <Component class="javax.swing.JButton" name="F2">
+        </Component>
+        <Component class="javax.swing.JButton" name="G2">
+        </Component>
+        <Component class="javax.swing.JButton" name="H2">
+        </Component>
+        <Component class="javax.swing.JButton" name="A1">
+        </Component>
+        <Component class="javax.swing.JButton" name="C1">
+        </Component>
+        <Component class="javax.swing.JButton" name="D1">
+        </Component>
+        <Component class="javax.swing.JButton" name="B1">
+        </Component>
+        <Component class="javax.swing.JButton" name="H1">
+        </Component>
+        <Component class="javax.swing.JButton" name="F1">
+        </Component>
+        <Component class="javax.swing.JButton" name="G1">
+        </Component>
+        <Component class="javax.swing.JButton" name="E1">
+        </Component>
+      </SubComponents>
+    </Container>
+    <Container class="javax.swing.JPanel" name="jPanel2">
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" attributes="0">
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="BtnInicio" min="-2" max="-2" attributes="0"/>
+                              <Component id="BtnMover" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
+                  </Group>
+                  <EmptySpace pref="46" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="BtnMover" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="BtnInicio" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="86" max="32767" attributes="0"/>
+              </Group>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+      <SubComponents>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Times New Roman" size="14" style="1"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Panel de control"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="BtnMover">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Mover"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnMoverActionPerformed"/>
+          </Events>
+        </Component>
+        <Component class="javax.swing.JButton" name="BtnInicio">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Volver al inicio"/>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnInicioActionPerformed"/>
+          </Events>
+        </Component>
+      </SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
