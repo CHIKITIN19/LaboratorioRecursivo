@@ -4,7 +4,6 @@
  */
 package Horse;
 
-import AjedrezRecursivo.Pieza;
 import AjedrezRecursivo.Tablero;
 import javax.swing.JOptionPane;
 
@@ -12,8 +11,12 @@ import javax.swing.JOptionPane;
  *
  * @author sebas
  */
-public class Horse extends Pieza {
+public class Horse{
+    
+    
     private static final int tamanho = 8;
+    private int coordenadaX= 0;
+    private int coordenadaY= 0;
     private static final int[] moviX = {2, 1, -1, -2, -2, -1, 1, 2}; 
     private static final int[] moviY = {1, 2, 2, 1, -1, -2, -2, -1};
     private Tablero tablero;
@@ -22,7 +25,6 @@ public class Horse extends Pieza {
     private IView inteface; 
 
         public Horse(Tablero tablero, IView inteface, int coordenadaX, int coordenadaY) {
-            super(coordenadaX, coordenadaY);
             this.tablero = tablero;
             this.recorridoCompleto  = false;
             this.casillasVisitadas = 0;
@@ -30,7 +32,8 @@ public class Horse extends Pieza {
         }
 
         public Horse(int coordenadaX, int coordenadaY) {
-            super(coordenadaX,coordenadaY);
+            this.coordenadaX = coordenadaX;
+            this.coordenadaY = coordenadaY;
         }
 
         public void move(int nX, int nY){
