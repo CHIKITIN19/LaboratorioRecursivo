@@ -20,7 +20,7 @@ public class Tablero {
             }
         }
     }
-    public boolean MovimientoValido(int x, int y ){
+    public boolean MovimientoValidoRango(int x, int y ){
         return (x>=0 && x < tamano && y>= 0 && y< tamano && tablero[x][y] == -1);
     }
     public void Posicion(int x, int y, int paso){

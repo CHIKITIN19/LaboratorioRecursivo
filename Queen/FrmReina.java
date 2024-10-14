@@ -4,6 +4,7 @@
  */
 package Queen;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
@@ -95,6 +96,7 @@ public class FrmReina extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         BtnMover = new javax.swing.JButton();
         BtnInicio = new javax.swing.JButton();
+        BtnReiniciar = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -338,6 +340,13 @@ public class FrmReina extends javax.swing.JFrame {
             }
         });
 
+        BtnReiniciar.setText("Reiniciar");
+        BtnReiniciar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                BtnReiniciarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
@@ -351,7 +360,8 @@ public class FrmReina extends javax.swing.JFrame {
                         .addGap(26, 26, 26)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(BtnInicio)
-                            .addComponent(BtnMover))))
+                            .addComponent(BtnMover)
+                            .addComponent(BtnReiniciar))))
                 .addContainerGap(46, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
@@ -361,6 +371,8 @@ public class FrmReina extends javax.swing.JFrame {
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(BtnMover)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(BtnReiniciar)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(BtnInicio)
                 .addContainerGap(86, Short.MAX_VALUE))
@@ -385,7 +397,7 @@ public class FrmReina extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGap(218, 218, 218)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(469, Short.MAX_VALUE))
+                .addContainerGap(434, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                     .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -408,7 +420,8 @@ public class FrmReina extends javax.swing.JFrame {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 if (queen.board[i][j] == queen.QUEEN) {
-                    botones[i * 8 + j].setText("Q");
+                    ImageIcon icon = new ImageIcon(getClass().getResource("queens.png"));
+                    botones[i * 8 + j].setIcon(icon);
                 } else {
                     botones[i * 8 + j].setText("X");
                 }
@@ -418,6 +431,13 @@ public class FrmReina extends javax.swing.JFrame {
         JOptionPane.showMessageDialog(null, "No se han encontrado soluciones", "Mensaje", HEIGHT);
     }
     }//GEN-LAST:event_BtnMoverActionPerformed
+
+    private void BtnReiniciarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnReiniciarActionPerformed
+        for (int i = 0; i < 64; i++) {
+        botones[i].setIcon(null);
+        botones[i].setText("");
+    }
+    }//GEN-LAST:event_BtnReiniciarActionPerformed
 
     private JButton[] botones = new JButton[64];
 
@@ -545,6 +565,7 @@ private void initBotones() {
     private javax.swing.JButton B8;
     private javax.swing.JButton BtnInicio;
     private javax.swing.JButton BtnMover;
+    private javax.swing.JButton BtnReiniciar;
     private javax.swing.JButton C1;
     private javax.swing.JButton C2;
     private javax.swing.JButton C3;
