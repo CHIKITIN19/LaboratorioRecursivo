@@ -100,6 +100,70 @@ public class FrmReina extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        B8.setBackground(new java.awt.Color(0, 0, 0));
+
+        D8.setBackground(new java.awt.Color(0, 0, 0));
+
+        F8.setBackground(new java.awt.Color(0, 0, 0));
+
+        H8.setBackground(new java.awt.Color(0, 0, 0));
+
+        A7.setBackground(new java.awt.Color(0, 0, 0));
+
+        C7.setBackground(new java.awt.Color(0, 0, 0));
+
+        E7.setBackground(new java.awt.Color(0, 0, 0));
+
+        G7.setBackground(new java.awt.Color(0, 0, 0));
+
+        D6.setBackground(new java.awt.Color(0, 0, 0));
+
+        B6.setBackground(new java.awt.Color(0, 0, 0));
+
+        H6.setBackground(new java.awt.Color(0, 0, 0));
+
+        F6.setBackground(new java.awt.Color(0, 0, 0));
+
+        E5.setBackground(new java.awt.Color(0, 0, 0));
+
+        G5.setBackground(new java.awt.Color(0, 0, 0));
+
+        A5.setBackground(new java.awt.Color(0, 0, 0));
+
+        C5.setBackground(new java.awt.Color(0, 0, 0));
+
+        F4.setBackground(new java.awt.Color(0, 0, 0));
+
+        H4.setBackground(new java.awt.Color(0, 0, 0));
+
+        B4.setBackground(new java.awt.Color(0, 0, 0));
+
+        D4.setBackground(new java.awt.Color(0, 0, 0));
+
+        A3.setBackground(new java.awt.Color(0, 0, 0));
+
+        G3.setBackground(new java.awt.Color(0, 0, 0));
+
+        E3.setBackground(new java.awt.Color(0, 0, 0));
+
+        C3.setBackground(new java.awt.Color(0, 0, 0));
+
+        B2.setBackground(new java.awt.Color(0, 0, 0));
+
+        D2.setBackground(new java.awt.Color(0, 0, 0));
+
+        F2.setBackground(new java.awt.Color(0, 0, 0));
+
+        H2.setBackground(new java.awt.Color(0, 0, 0));
+
+        A1.setBackground(new java.awt.Color(0, 0, 0));
+
+        C1.setBackground(new java.awt.Color(0, 0, 0));
+
+        G1.setBackground(new java.awt.Color(0, 0, 0));
+
+        E1.setBackground(new java.awt.Color(0, 0, 0));
+
         javax.swing.GroupLayout PanelLayout = new javax.swing.GroupLayout(Panel);
         Panel.setLayout(PanelLayout);
         PanelLayout.setHorizontalGroup(
@@ -416,15 +480,13 @@ public class FrmReina extends javax.swing.JFrame {
 
     private void BtnMoverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnMoverActionPerformed
         EightQueens queen = new EightQueens();
-    if (queen.solve(0)) {
+    if (queen.solve(1)) {
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 if (queen.board[i][j] == queen.QUEEN) {
                     ImageIcon icon = new ImageIcon(getClass().getResource("queens.png"));
                     botones[i * 8 + j].setIcon(icon);
-                } else {
-                    botones[i * 8 + j].setText("X");
-                }
+                } 
             }
         }
     } else {
