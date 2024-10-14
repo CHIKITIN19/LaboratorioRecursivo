@@ -17,7 +17,7 @@ import javax.swing.JPanel;
  *
  * @author 9567
  */
-public class Ajedrez extends javax.swing.JFrame{
+public class Ajedrez extends javax.swing.JFrame implements IView{
     private JButton[][] botonesTablero;
     private Horse controler;
     private Tablero tablero;
@@ -110,6 +110,9 @@ public class Ajedrez extends javax.swing.JFrame{
         jButton62 = new javax.swing.JButton();
         jButton63 = new javax.swing.JButton();
         jButton64 = new javax.swing.JButton();
+        jPanel2 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        btnRestablecer = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -307,24 +310,67 @@ public class Ajedrez extends javax.swing.JFrame{
         jButton64.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         jPanel1.add(jButton64);
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI Black", 2, 18)); // NOI18N
+        jLabel1.setText("Reiniciar Tablero");
+
+        btnRestablecer.setFont(new java.awt.Font("Segoe UI Black", 2, 18)); // NOI18N
+        btnRestablecer.setText("Restablecer");
+        btnRestablecer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnRestablecerActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
+        jPanel2.setLayout(jPanel2Layout);
+        jPanel2Layout.setHorizontalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(22, 22, 22))
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(14, 14, 14)
+                .addComponent(btnRestablecer)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+        jPanel2Layout.setVerticalGroup(
+            jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(141, 141, 141)
+                .addComponent(jLabel1)
+                .addGap(36, 36, 36)
+                .addComponent(btnRestablecer)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 593, Short.MAX_VALUE)
-                .addGap(16, 16, 16))
+                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 547, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 482, Short.MAX_VALUE))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 482, Short.MAX_VALUE)
+                    .addComponent(jPanel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnRestablecerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRestablecerActionPerformed
+        resetTablero();
+
+    }//GEN-LAST:event_btnRestablecerActionPerformed
 
     /**
      * @param args the command line arguments
@@ -393,34 +439,38 @@ public class Ajedrez extends javax.swing.JFrame{
             }
         }
     }
-        private void pedirCoordenadasIniciales() {
-        try {
-            int x = Integer.parseInt(JOptionPane.showInputDialog("Ingrese X inicial (0-7):"));
-            int y = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Y inicial (0-7):"));
-            if (x < 0 || x >= 8 || y < 0 || y >= 8) {
-                JOptionPane.showMessageDialog(this, "Coordenadas invalidas. Ingrese valores entre 0 y 7.");
-                return;
-            }
-            Tablero();
-           controler = new Horse(tablero,this,x,y);
-           
-           //Hilo para mostrar consecutivamente el desplazamiento del caballo
-             new Thread(() -> {
-            controler.IniciarRecorrido(x, y);
-            }).start();
-        } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(this, "Entrada invalida. Por favor, ingrese valores numericos.");
-        }
-    }
+private void pedirCoordenadasIniciales() {
+    try {
+        int x = Integer.parseInt(JOptionPane.showInputDialog("Ingrese X inicial (0-7):"));
+        int y = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Y inicial (0-7):"));
 
-     public void actualizarCasilla(int x, int y, int paso) {
-        if (x >= 0 && x < 8 && y >= 0 && y < 8 && botonesTablero[x][y] != null) {
-            botonesTablero[x][y].setText(String.valueOf(paso));
-            botonesTablero[x][y].setBackground(Color.GREEN);
-        } else {
-            System.out.println("Error: Coordenadas invalidas : (" + x + ", " + y + ")");
+        
+        if (x < 0 || x >= 8 || y < 0 || y >= 8) {
+            JOptionPane.showMessageDialog(this, "Coordenadas invalidas. Ingrese valores entre 0 y 7.");
+            return;
         }
+
+        Tablero();
+        controler = new Horse(tablero, this, x, y);  
+
+       
+        new Thread(() -> {
+            controler.IniciarRecorrido(x, y);
+        }).start();
+
+    } catch (NumberFormatException e) {
+        JOptionPane.showMessageDialog(this, "Entrada invalida. Por favor, ingrese valores numéricos.");
     }
+}
+
+//     public void actualizarCasilla(int x, int y, int paso) {
+//        if (x >= 0 && x < 8 && y >= 0 && y < 8 && botonesTablero[x][y] != null) {
+//            botonesTablero[x][y].setText(String.valueOf(paso));
+//            botonesTablero[x][y].setBackground(Color.GREEN);
+//        } else {
+//            System.out.println("Error: Coordenadas invalidas : (" + x + ", " + y + ")");
+//        }
+//    }
 
     public void Tablero() {
         for (int i = 0; i < 8; i++) {
@@ -431,10 +481,27 @@ public class Ajedrez extends javax.swing.JFrame{
                 }
             }
         }
+        
+    }
+    private void resetTablero() {
+        
+        tablero = new Tablero(); 
+
+        
+        for (int i = 0; i < 8; i++) {
+            for (int j = 0; j < 8; j++) {
+                if (botonesTablero[i][j] != null) {
+                    botonesTablero[i][j].setText(" X ");
+                    botonesTablero[i][j].setBackground(Color.YELLOW);  
+                }
+            }
+        }
+        pedirCoordenadasIniciales();
     }
     
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnRestablecer;
     public javax.swing.JButton jButton1;
     public javax.swing.JButton jButton10;
     public javax.swing.JButton jButton11;
@@ -499,7 +566,9 @@ public class Ajedrez extends javax.swing.JFrame{
     public javax.swing.JButton jButton7;
     public javax.swing.JButton jButton8;
     public javax.swing.JButton jButton9;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel2;
     // End of variables declaration//GEN-END:variables
 
     private Component findComponentByName(JPanel jPanel, String name) {
@@ -510,4 +579,12 @@ public class Ajedrez extends javax.swing.JFrame{
         }
         return null;
     }
+
+    @Override
+    public void UpdateCasilla(int x, int y, int paso) {
+     if (botonesTablero[x][y] != null) {
+        botonesTablero[x][y].setText(String.valueOf(paso)); // Actualiza el número de paso
+        botonesTablero[x][y].setBackground(Color.GREEN);    // Cambia el color para mostrar el recorrido
+    }
+  }
 }

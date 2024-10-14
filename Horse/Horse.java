@@ -19,9 +19,9 @@ public class Horse extends Pieza {
     private Tablero tablero;
     private int casillasVisitadas; 
     private boolean recorridoCompleto;
-    private Ajedrez inteface; //Para El JFRAME de ajedrez
+    private IView inteface; 
 
-        public Horse(Tablero tablero, Ajedrez inteface, int coordenadaX, int coordenadaY) {
+        public Horse(Tablero tablero, IView inteface, int coordenadaX, int coordenadaY) {
             super(coordenadaX, coordenadaY);
             this.tablero = tablero;
             this.recorridoCompleto  = false;
@@ -50,7 +50,7 @@ public class Horse extends Pieza {
             casillasVisitadas++;
 
             //Actualiza la casilla con hilo
-            inteface.actualizarCasilla(x, y, paso);
+            inteface.UpdateCasilla(x, y, paso);
             try {
                 Thread.sleep(500);
             } catch (InterruptedException e) {
@@ -80,9 +80,9 @@ public class Horse extends Pieza {
         }
         Recorrido(x, y, 0);
         if (recorridoCompleto) {
-           JOptionPane.showMessageDialog(inteface, "EL RECORRIDO SE COMPLETO CORRECTAMENTE");
+           JOptionPane.showMessageDialog(null, "EL RECORRIDO SE COMPLETO CORRECTAMENTE");
         } else {
-           JOptionPane.showMessageDialog(inteface, "EL RECORRIDO NO SE COMPLETO CORRECTAMENTE");
+           JOptionPane.showMessageDialog(null, "EL RECORRIDO NO SE COMPLETO CORRECTAMENTE");
         }
     }
 
