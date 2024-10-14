@@ -4,7 +4,7 @@
  */
 package Queen;
 
-import Horse.Ajedrez;
+import Horse.FrmCaballo;
 
 /**
  *
@@ -93,7 +93,7 @@ public class FrmTablero extends javax.swing.JFrame {
 
     private void jMenuItem2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem2ActionPerformed
         this.setVisible(false);
-        Ajedrez frm = new Ajedrez();
+        FrmCaballo frm = new FrmCaballo();
         frm.setVisible(true);
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
