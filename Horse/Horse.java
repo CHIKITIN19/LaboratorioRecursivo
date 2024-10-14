@@ -43,7 +43,7 @@ public class Horse extends Pieza {
                 return;
             }
 
-            if (!tablero.MovimientoValido(x, y)) { 
+            if (!tablero.MovimientoValidoRango(x, y)) { 
                 return;
             }
             tablero.Posicion(x, y, paso);
@@ -62,7 +62,7 @@ public class Horse extends Pieza {
             for (int i = 0; i < tamanho; i++) {
                 int siguienteX = x + moviX[i];
                 int siguienteY = y + moviY[i];
-                  if (tablero.MovimientoValido(siguienteX, siguienteY)) {
+                  if (tablero.MovimientoValidoRango(siguienteX, siguienteY)) {
                   movimientoValido = true;
                   Recorrido(siguienteX, siguienteY, paso + 1); 
                   break;
@@ -75,7 +75,7 @@ public class Horse extends Pieza {
     }
 
     public void IniciarRecorrido(int x, int y) {
-        if (!tablero.MovimientoValido(x, y)) {
+        if (!tablero.MovimientoValidoRango(x, y)) {
         return;
         }
         Recorrido(x, y, 0);
@@ -88,11 +88,7 @@ public class Horse extends Pieza {
 
     public void MostrarResultado() {
         tablero.MostrarTablero();
-        try {
-           Thread.sleep(800); 
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+
     }
     
 }
