@@ -439,27 +439,27 @@ public class Ajedrez extends javax.swing.JFrame implements IView{
             }
         }
     }
-private void pedirCoordenadasIniciales() {
-    try {
-        int x = Integer.parseInt(JOptionPane.showInputDialog("Ingrese X inicial (0-7):"));
-        int y = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Y inicial (0-7):"));
+    private void pedirCoordenadasIniciales() {
+        try {
+            int x = Integer.parseInt(JOptionPane.showInputDialog("Ingrese X inicial (0-7):"));
+            int y = Integer.parseInt(JOptionPane.showInputDialog("Ingrese Y inicial (0-7):"));
 
-        
-        if (x < 0 || x >= 8 || y < 0 || y >= 8) {
-            JOptionPane.showMessageDialog(this, "Coordenadas invalidas. Ingrese valores entre 0 y 7.");
-            return;
-        }
 
-        Tablero();
-        controler = new Horse(tablero, this, x, y);  
+            if (x < 0 || x >= 8 || y < 0 || y >= 8) {
+                JOptionPane.showMessageDialog(this, "Coordenadas invalidas. Ingrese valores entre 0 y 7.");
+                return;
+            }
 
-       
-        new Thread(() -> {
-            controler.IniciarRecorrido(x, y);
-        }).start();
+            Tablero();
+            controler = new Horse(tablero, this, x, y);  
 
-    } catch (NumberFormatException e) {
-        JOptionPane.showMessageDialog(this, "Entrada invalida. Por favor, ingrese valores numéricos.");
+
+            new Thread(() -> {
+                controler.IniciarRecorrido(x, y);
+            }).start();
+
+        } catch (NumberFormatException e) {
+            JOptionPane.showMessageDialog(this, "Entrada invalida. Por favor, ingrese valores numéricos.");
     }
 }
 
@@ -583,8 +583,8 @@ private void pedirCoordenadasIniciales() {
     @Override
     public void UpdateCasilla(int x, int y, int paso) {
      if (botonesTablero[x][y] != null) {
-        botonesTablero[x][y].setText(String.valueOf(paso)); // Actualiza el número de paso
-        botonesTablero[x][y].setBackground(Color.GREEN);    // Cambia el color para mostrar el recorrido
+        botonesTablero[x][y].setText(String.valueOf(paso)); 
+        botonesTablero[x][y].setBackground(Color.GREEN);
     }
   }
 }

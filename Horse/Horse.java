@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author sebas
  */
-public class Horse{
+public class Horse implements Runnable{
     
     
     private static final int tamanho = 8;
@@ -92,6 +92,11 @@ public class Horse{
     public void MostrarResultado() {
         tablero.MostrarTablero();
 
+    }
+
+    @Override
+    public void run() {
+        IniciarRecorrido(coordenadaX, coordenadaY);
     }
     
 }
